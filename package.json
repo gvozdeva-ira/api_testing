@@ -1,0 +1,21 @@
+{
+  "name": "api_testing",
+  "version": "1.0.0",
+  "description": "\"Testing API using different tools\"",
+  "scripts": {
+    "test:run": "cypress run",
+    "test:open": "cypress open",
+    "allure:clear": "rm -rf ./allure-results; rm -rf ./allure-report; mkdir allure-results; mkdir allure-report",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@mmisty/cypress-allure-adapter": "^0.16.4",
+    "allure-commandline": "^2.27.0",
+    "cypress": "^13.7.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.3"
+  }
+}
